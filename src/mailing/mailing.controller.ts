@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, } from '@nestjs/common';
 import { MailingService } from './mailing.service';
 
 @Controller('mailing')
@@ -9,4 +9,7 @@ export class MailingController {
     public sendMail() {
       this.mailingService.sendMail();
     }
+
+   
 }
+
